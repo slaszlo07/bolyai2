@@ -1,0 +1,10 @@
+magassag = float(input("Kérem, adja meg a magasságát méterben: "))
+tomeg = float(input("Kérem, adja meg a tömegét kilogrammban: "))
+tti = tomeg / (magassag ** 2)
+tti_kerekitett = round(tti, 2)
+tti_szazalek = tti_kerekitett * 100
+alsó_hatar = 18.5 * (magassag ** 2)
+felso_hatar = 24.99 * (magassag ** 2)
+print(f"A Testtömegindex (TTI) értéke: {tti_kerekitett}")
+print(f"A TTI százalékban: {tti_szazalek:.2f}%")
+print(f"A normál testtömeg-intervallum a megadott magassághoz viszonyítva: {alsó_hatar:.2f} kg - {felso_hatar:.2f} kg")
